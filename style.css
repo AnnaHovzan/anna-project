@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 1.5rem;
+}
+
 
 nav {
   display: flex;
@@ -25,12 +29,23 @@ nav > ul {
 
 nav > ul > li {
   padding: 0.5rem;
+  cursor: pointer;
+}
+
+nav > ul > li:hover {
+  background-color: antiquewhite;
+}
+
+nav > img {
+  width: 60px;
+  height: 25px;
 }
 
 .section {
   margin: 0 auto;
   padding: 2rem;
   margin-bottom: 0.5rem;
+  min-height: 30vw;
 }
 
 .helloWorld {
@@ -38,10 +53,15 @@ nav > ul > li {
   justify-content: center;
   display: grid;
   text-align: center;
+  min-height: 20vh;
 }
 
 .helloWorld > h1 {
-  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.helloWorld > p {
+  max-width: 70vw;
 }
 
 .about-this-page {
@@ -51,24 +71,40 @@ nav > ul > li {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  border: 5px antiquewhite;
+  padding-left: 15vw;
+  padding-right: 15vw;
 }
 
 .about-this-page-text{
   max-width: 25vw;
-  min-width: 20vw;
+  /* min-width: 20vw; */
   text-align: center;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
-.about-this-page-text > button {
-  padding: 10px;
+/* .about-this-page-text > p{
+  margin: 0.5;
+} */
+
+.about-this-page-text button {
+  padding: 1rem;
   margin-top: 0.5rem;
   border-radius: 15px;
+  cursor: pointer;
 }
 
+.about-this-page-text button:hover {
+  padding: 1.2rem;
+  color: white;
+  background-color: rgb(114, 77, 77);
+}
+
+
+
 .about-this-page-img {
-  min-width: 200px;
-  min-height: 140px;
+  min-width: 30vw;
+  min-height: 20vw;
   background-image: url(images/aboutUs.jpg);
 }
 
@@ -101,6 +137,12 @@ nav > ul > li {
   background-color: antiquewhite;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+.item:hover {
+  color: white;
+  background-color: rgb(114, 77, 77);
 }
 
 .contact-us {
@@ -109,16 +151,62 @@ nav > ul > li {
   justify-content: center;
   align-content: center;
   text-align: center;
+  padding: 2rem 0;
+  background-color: antiquewhite;
 }
 
-.contact-us-form > form {
+.contact-us > h1{
+  margin-bottom: 1rem;
+}
+
+.contact-us > p {
+  margin: 1rem;
+}
+
+.contact-us-form form {
   box-sizing: border-box;
-  gap: 1rem;
 }
 
-.contact-us-form > input {
-  margin: 0.5rem 0;
+input,
+label,
+textarea,
+button {
+  box-sizing: border-box;
+  margin: 0.5rem;
+  border-style: none;
 }
+
+
+input,
+textarea {
+  padding: 0.5rem;
+}
+
+.contact-us-form button {
+  padding: 1rem;
+  border-radius: 15px;
+  border-style: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.contact-us-form button:hover {
+  padding: 1.2rem;
+  color: white;
+  background-color: rgb(114, 77, 77);
+}
+
+
+.contact-us-img {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(114, 77, 77);
+  border-radius: 50%;
+}
+
+
+
 
 
 
