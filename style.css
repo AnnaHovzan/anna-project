@@ -69,6 +69,97 @@ nav > img {
   max-width: 70vw;
 }
 
+/* ANIMATION START*/ 
+.animation {
+  max-width: 100vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+.animation-block {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  width: 100%;
+  height: 100%;
+}
+
+.animation-div {
+width: 10px;
+height: 10px;
+justify-self: center;
+/* align-self: center; */
+background-color: rgb(244, 180, 98);
+animation: rotate 5s linear infinite;
+z-index: 1;
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.btn {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  color: rgb(246, 145, 22);
+  background-color: white;
+  border: 10px solid rgb(246, 145, 22);
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 2;
+
+
+  /* transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0ms; */
+
+  transition: all 0.3s ease 0ms;
+
+
+}
+.btn:hover {
+  transform: translateY(-10px);
+  /* transform: rotate(0.5turn); */
+  background-color: rgb(246, 145, 22);
+  color: white;
+}
+
+/* @keyframes slideInLeft {
+  from {
+    transform: translateX(300px);
+
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slideInLeft {
+  animation: slideInLeft 1s ease-in;
+} */
+
+
+
+/* ANIMATION END*/
+
 .about-this-page {
   display: flex;
   flex-wrap: wrap;
